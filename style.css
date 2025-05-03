@@ -1,0 +1,633 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+html{
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: green;
+    position: sticky;
+    top:0px;
+    width: 100vw;
+    height: 10vh;
+    z-index: 1;
+}
+
+.logo{
+    color: #fff;
+    font-size: 2em;
+}
+
+.menu_btn{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.navbar li{
+    list-style: none;
+}
+header ul li #signup{
+    background-color: #fff;
+    color: #036313;
+    margin-left: 20px;
+}
+
+header ul li #signup:hover{
+    background-color: #afa0a0;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: green;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px black;
+
+}
+
+.hero{
+position: relative;
+height: 90vh;
+width: 100vw;
+background: rgba(0, 0, 0, 50);
+}
+.hero::before{
+    content: '';
+    background-image: url(/image/hero1.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: top;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+opacity: 40%;
+}
+.hero_content{
+
+    position: relative;
+    top: 30%;
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+}
+.hero_content p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.hero_content h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+   
+}
+.hero_content button{
+    margin-top: 20px;
+    background: none;
+   
+}
+.hero_content button a{
+    background-color: #fff;
+    text-decoration: none;
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+.hero_content button a:hover{
+    background-color: #afa0a0;
+}
+.container{
+  
+   width: 70%;
+   text-align: center;
+  position: relative;
+  left: 15%;
+  margin-top: 200px;
+  background-color: rgb(248, 248, 248);
+  padding: 20px;
+ 
+}
+.container h2{
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container .sub_container{
+    display: flex;
+    justify-content: space-between;
+   
+    padding: 10px 20px 30px 20px;
+}
+.content{
+    width: 30%;
+    text-align: left;
+    box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 1);
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.content img{
+    width: 4vw;
+    height: 5vh;
+}
+
+.content  p{
+    font-family: monospace;
+}
+
+.button {
+    background-color: #03fa2c;
+    text-decoration: none;
+   margin-top: 5px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+.button:hover{
+    background-color: #036313;
+    padding: 10px 15px;
+    transition: 0.5ms;
+}
+.button a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+/********box******/
+
+.box{
+    width: 70%;
+    background-color: rgb(248, 248, 248);
+    text-align: center;
+    position: relative;
+    left: 15%;
+    margin-top: 200px;
+    padding: 20px;
+ 
+}
+
+.box h2{
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.box .sub_box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.boxes{
+    width: 30%;
+    text-align: center;
+    box-shadow: 1px 1px 16px 1px rgba(0, 0, 0, 1);
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.boxes img{
+    width: 5vw;
+    height: 6vh;
+}
+
+.boxes p{
+    
+    margin-top: 10px;
+}
+
+/*form************/
+
+.chart{
+    margin-top: 200px;
+   position: relative;
+    text-align: center;
+    background-color: rgb(248, 248, 248);
+    width: 40%;
+    left: 30%;
+    box-shadow: 1px 0px 16px 0px black;
+    border-radius: 5px;
+}
+
+.chart form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 10%;
+    text-align: left;
+    width: 80%;
+    border-radius: 5px;
+  
+    
+
+}
+.chart form h1{
+    margin-top: 20px;
+    text-align: center;
+}
+label{
+    margin-top: 20px;
+    font-size: 20px;
+}
+input{
+    height: 5vh;
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:last-of-type{
+    background-color: #03fa2c;
+    font-size: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 90%;
+    position: relative;
+    left: 5%;
+}
+
+textarea{
+    resize: none;
+    height: 150px;
+    font-size: 15px;
+}
+
+.about{
+    
+    width: 60vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+   position: relative;
+   left: 20%;
+   margin-top: 200px;
+   border-radius: 5px;
+   box-shadow: 1px 0px 16px 0px black;
+   
+}
+
+.about img{
+  width: 60%;
+  height: 100%;
+}
+.about_content{
+    margin-top: 50px;
+    text-align: justify;
+   margin-right: 20px;
+}
+.about_content h2{
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+.about_content p{
+  font-size: 19px;
+}
+footer{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgb(46, 46, 46);
+   padding-bottom: 20px;
+    padding-top: 20px;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto 30px;
+}
+
+footer div h5{
+    font-size: 20px;
+    color: #fff;
+}
+footer div a{
+    text-decoration: none;
+    color: rgb(71, 228, 181);
+    font-size: 15px;
+}
+footer div p{
+    color: rgb(71, 228, 181);
+    font-size: 15px;
+}
+
+
+/***********how it works****/
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 1.5em;  
+    position: relative;
+}
+
+.sub_section{
+    width: 80%;
+    
+}
+
+.sub_section p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.sub_section img{
+    margin-top: 20px;
+    width: 80%;
+    height: 50vh;
+    border-radius: 5px;
+}
+
+
+/********about***/
+.about_section{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    margin: 150px;
+}
+
+.inner_container{
+    align-items: center;
+    width: 60%;
+    text-align: justify;
+    box-shadow: 0px 0px 16px 1px black;
+    padding: 30px;
+    height: 80vh;
+    
+}
+.inner_container p{
+    margin-top: 20px;
+}
+
+
+
+.contact{
+    background-color: black;
+    color: aliceblue;
+    width: 40%;
+    height: 60vh;
+    position: absolute;
+    left: 30%;
+    top: 70%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.contact h2{
+    margin-top: 10px;
+}
+.contact p{
+    margin-top: 40px;
+    color: crimson;
+}
+
+.dashboard{
+   text-align: center;
+   margin-top: 50px;
+}
+.dashboard h1{
+    font-size: 3em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.dashboard h2{
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.line{
+    background-color: #c2c2c2;
+    width: 80%;
+    height: 3px;
+    position: absolute;
+    left: 150px;
+
+}
+
+.stages{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+.stage1{
+    background-color: #c2c2c2;
+    padding: 40px;
+    border-radius: 10px;
+}
+.stage1 h2{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+/* ========== MEDIA QUERIES ========== */
+
+/* For tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .navbar {
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+  
+    .container .sub_container,
+    .box .sub_box {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .content,
+    .boxes {
+      width: 80%;
+    }
+  
+    .about {
+      flex-direction: column;
+      width: 90vw;
+      left: 5%;
+      height: auto;
+      margin-top: 100px;
+    }
+  
+    .about img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .about_content {
+      margin: 20px;
+    }
+  
+    .chart {
+      width: 60%;
+      left: 20%;
+    }
+  }
+  
+  /* For phones (max-width: 768px) */
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      height: auto;
+      padding: 10px 0;
+    }
+    .menu_btn{
+        display: block;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      gap: 30px;
+       position: absolute;
+       background-color: #036313;
+       left: -900px;
+       top: 0;
+       height: 100vh;
+       width: 40%;
+       transition: all 1s ease;
+
+    }
+    .navbar.active{
+        left: 0;
+    }
+  
+    .hero_content h2 {
+      font-size: 1.5em;
+    }
+  
+    .hero_content p {
+      font-size: 16px;
+      padding: 0 10px;
+    }
+  
+    .container,
+    .box {
+      width: 90%;
+      left: 5%;
+      margin-top: 100px;
+    }
+  
+    .chart {
+      width: 80%;
+      left: 10%;
+    }
+
+    .about_section{
+        font-size:15px ;
+        text-align: center;
+       
+       
+        margin: 20px 2px;
+    }
+  
+    .about_content h2 {
+      font-size: 1.5em;
+    }
+
+    .sub_section img{
+        height: 30vh;
+    }
+
+    .contact{
+        font-size: 10px;
+        width: 60%;
+        left: 20%;
+    }
+  
+    footer {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      text-align: center;
+    }
+  }
+  
+  /* For small phones (max-width: 480px) */
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 1.5em;
+    }
+  
+    .navbar li a {
+      font-size: 16px;
+      padding: 5px;
+    }
+  
+    .hero_content h2 {
+      font-size: 1.2em;
+    }
+  
+    .hero_content button a {
+      font-size: 16px;
+    }
+  
+    .content,
+    .boxes {
+      width: 100%;
+    }
+  
+    input, textarea {
+      font-size: 14px;
+    }
+  
+    input:last-of-type {
+      font-size: 16px;
+    }
+  
+    .about_content p {
+      font-size: 16px;
+    }
+  
+    .footer-section h5 {
+      font-size: 16px;
+    }
+  
+    .footer-section a,
+    .footer-section p {
+      font-size: 14px;
+    }
+  }
+  

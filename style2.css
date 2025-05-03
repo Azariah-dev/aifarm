@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.signup{
+    display: flex;
+    justify-content: center;
+    color: #000000;
+
+}
+
+
+form{
+    margin-top: 30px;
+    background-color: rgb(66, 243, 66);
+    width: 30%;
+    height: 80vh;
+   padding-top: 20px;
+    border-radius: 7px;
+    text-align: center;
+   
+}
+
+h2{
+    font-size: 40px;
+}
+p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+label{
+    font-size: 20px; 
+    margin-left: -180px;
+    text-align: justify;
+    
+}
+input{
+    width: 300px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/*/////////////admin//////////*/
+
+header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0px 2px 5px 0px black;
+    width: 100%;
+   
+    padding-top: 20px;
+    background-color: green;
+}
+
+header .head{
+    display: flex;
+    justify-content: flex-start;
+   align-items: center;
+   margin-left: 150px;
+   gap: 450px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 15% 80%;
+    column-gap: 30px;
+    height: 90vh;
+}
+
+.container aside{
+    background-color: green;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: 30px;
+ 
+   
+}
+
+.container aside a{
+    text-decoration: none;
+    color: black;
+    margin-top: 30px;
+    border-bottom: 2px solid #f1f1f1;
+    border-radius: 5px;
+    padding: 5px;
+   
+}
+.container aside a:hover{
+    background-color: aliceblue;
+}
+
+
+
+.container aside button{
+    margin-top: 100px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.container main{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+.case{
+    background-color: rgb(197, 194, 189);
+    height: 20%;
+    width: 20%;
+    text-align: center;
+    margin-top: 70px;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+.case a{
+    text-decoration: none;
+    color: #000000;
+}
+
+/*///////Table//////*/
+.main{
+    margin-top: 50px;
+}
+.main h1{
+    text-align: center;
+}
+.main a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+}
+
+.upper{
+    margin-top: 20px;
+}
+.upper input{
+    border: 1px solid black;
+    text-align: center;
+}
+.upper button{
+    margin-left: 20px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+table{
+  
+    width: 1000px;
+    text-align: center;
+    
+}
+thead{
+    background-color: rgb(152, 236, 166);
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px;
+   
+}
+td{
+    padding: 10px;
+    font-size: 20px;
+   
+    border: none;
+}
+
+button
+{
+    font-size: 15px;
+    padding: 5px;
+}
+
+.view{
+    background-color: rgb(38, 228, 20);
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+.edit{
+    background-color: rgb(46, 49, 226);
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+.delete{
+    background-color: red;
+    cursor: pointer;
+    border-radius: 5px;
+}
+tr:nth-child(even){
+    background-color: rgb(178, 182, 180);
+}
+
+
+
